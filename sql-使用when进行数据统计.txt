@@ -1,0 +1,4 @@
+select  count(distinct case when user_name = '123@126.com' then user_name else null end) a ,
+		count(distinct case when user_name = '123@126.com' then pass_word else null end) b ,
+        count(distinct case when answer = 'answer' then user_name else null end) c 
+from fastpay_cust_info
